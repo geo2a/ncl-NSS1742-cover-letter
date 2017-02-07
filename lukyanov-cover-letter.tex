@@ -28,7 +28,7 @@
 \moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{ragged2e}
 
 \usepackage[scale=0.75]{geometry} % Reduce document margins
 %\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
@@ -43,10 +43,10 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
-\address{44 Pushkinskaya st.}{344082 Rostov-on-Don, Russia}
-\mobile{+7(908) 506 9512}
-\email{georgiylukjanov@gmail.com}
-\homepage{geo2a.github.io}{geo2a.github.io}
+% \address{44 Pushkinskaya st.}{344082 Rostov-on-Don, Russia}
+% \mobile{+7(908) 506 9512}
+% \email{georgiylukjanov@gmail.com}
+% \homepage{geo2a.github.io}{geo2a.github.io}
 
 \begin{document}
 
@@ -66,89 +66,129 @@
 
 \makelettertitle % Print letter title
 
-A distinctive feature of functional programming paradigm is that it takes
-roots in such highly abstract fields of mathematics as logic and theory of
-computations. Influenced with concision of lambda calculus and clarity of logic, 
-functional programming languages have laconic syntax assigned to powerful
-and rich semantics. And more than that, the most notable distinction of modern 
-functional programming languages are its type systems, providing feature of
-so-called lightweight verification and enabling software developers with
-possibility to eliminate a lot of errors without even running their programs.
+\justify
+I've been fascinated by functional programming since my third year of
+undergraduate studies, because it takes roots in such highly
+abstract fields of mathematics as logic and theory of computations. Being hooked 
+by its abstract beauty and solid foundation,
+I've started to look for a way to improve my understanding of mathematics that 
+makes a basis for it and to have a supervised research work on some connected 
+topic. And, fortunately, there were faculty members in my department who shared 
+my interests and helped me to develop myself and my knowledge.
 
-Those facts about functional programming have fascinated me when I was in third
-year of my undergraduate studies and I've started to look for a way to improve 
-my understanding of mathematics that makes a basis for it and to have a
-supervised research work on some topic, connected with functional programming. 
-And, fortunately, there faculty members in my department who shared my interests
-and helped me to develop myself and my knowledge. Finally, after two years, 
-it led to creation of my Bachelor's thesis, that discussed different approaches
-to typing of computations containing side-effects to development of parsers.
+What made my so found of functional programming languages is its expressiveness
+and high degree of control under program behaviour. And more than that,
+the most notable distinction of modern functional programming languages is
+ability to check correctness of programs even without need to run them,
+enabling software developers with possibility to eliminate a lot of errors and
+save massive amounts of time, because correction of programming errors
+(debugging) requires a lot more resources then initial development.
+
+So, I've been doing research on functional programming under supervision of
+prof Artem Pelenitsyn. And, after two years, this activities led to creation of
+my Bachelor's thesis in Applied Mathematics and Informatics, that discussed
+different approaches to typing of
+computations containing side-effects in context of development of parsers. 
+With this project, I won first place award in students research competition
+"Week of Science 2015" of Southern Federal University (my Alma Mater) and
+received excellent mark (5 of 5) for my Bachelor's thesis defence. 
 Recently, I've revised this work, translated into English and submitted to 
-TMPA 2017 conference (\url{http://tmpaconf.org/}) and it was accepted. I'll be
-presenting it on 3d or 4th of March, 2017 in Moscow, proceedings are going to
-be published with Springer in their Communications in Computer and Information 
-Science series (indexed by Scopus and DBLP digital libraries). 
+TMPA 2017 conference (\url{http://tmpaconf.org/}) under the title "Functional 
+parser of Markdown language based on monad combining and monoidal source stream 
+representation" and it has been accepted. I'll be presenting it on 3d or 4th of
+March, 2017 in Moscow, proceedings are going to be published by Springer in
+their Communications in Computer and Information Science series (indexed by 
+Scopus and DBLP digital libraries). 
 
 After receiving my Bachelor's diploma, I've enrolled to Master's
-program, provided by the same university and continued to work with my
-supervisor. During next year, I've been developing a distributed system, 
-that helps teacher of programming classes to distribute his attention between
-students (Project description is available on github: \url{https://github.com/geo2a/students-big-brother}). 
+programme "Fundamental Informatics and Computer Science" in the same university 
+(Southern Federal University, Russia) and have been accepted without
+examination, thanks to my high research activity during undergraduate studies
+and high GPA (4.53 / 5.0). I've continued to work with my supervisor, 
+prof Artem Pelenitsyn. During next year, I've been developing
+"Student's Big Brother" --- a distributed system, that helps teacher of 
+programming classes to distribute his attention between students 
+(Project description is available on github:
+\url{https://github.com/geo2a/students-big-brother}). This project was motivated
+by quite big sizes of freshmen groups and a fact that most first year students 
+are too shy to ask questions if they are stuck. So, teacher has to try to watch
+student's activity during practical classes by looking into his display. This
+procedure is quite time consuming. Therefore, proposed workflow is as follows:
+students write code and special program grabs their sources and sends to the
+server when source code files are stored in database for further analysis and
+access. Then, source files got displayed in teachers web interface, grouped by
+student. Updates are requested from a server by teacher's demand. System consist
+of three modules: application server and student's module are implemented in
+Haskell language using modern programming techniques, and teachers web interface
+is implemented via standard web technologies (HTML/CSS/JavaScript). In addition,
+there is also a prototype of iOS mobile app for teacher implemented in Swift.  
 
-Alongside with development of this project and following my own classes, 
+Concurrently with doing web programming in Haskell. I've been continuing to
+study the topic of my Bachelor's thesis: computational effects. My current
+activities include development of parsers library based on experimental
+programming language Frank, prototype is available on GitHub: 
+\url{https://github.com/geo2a/frankoparsec}. I'm going to submit a paper to
+Programming Languages and Compilers (http://plc.sfedu.ru/) conference, 
+which is going to be held at my university in April, 2017.  
+
+Alongside with development of these projects and following my own classes, 
 I've been assisting to teach "Functional Programming in Haskell" course taught 
-by prof. Vitaly Bragilevskiy to undergrads by occasional lecturing
-and teaching practical classes. It wasn't my first experience of teaching,
-because I've already been given some lessons on mathematics and programming 
-individually to freshmen and school pupils, but it first one of such a large 
-scale. As I think, it was really important for me to have a look on educational 
-procedures from teachers point of view.
+to undergrads in Southern Federal University by prof. Vitaly Bragilevskiy. 
+I've been teaching practical classes with occasional lecturing.
+It wasn't my first experience of teaching, because I've already been
+giving some lessons on mathematics and programming individually to freshmen 
+and school pupils, but it is a first one of such a large scale. 
+It was very engaging to give lectures on topics of my interest and
+help students to dive into world of functional programming during practical 
+classes. Besides, I enjoyed working with highly motivated students, 
+especially when it came to personal project section of course:
+students worked in pairs developing video game of their choice. 
+As I think, it was really important for me to have a look on educational 
+procedures from teachers point of view. Furthermore, this experience was main
+factor that enabled me to consider a career in academia, and, as a natural step
+towards, to find myself a solid PhD programme.
 
-Then, I was advised to go for an academic exchange programme (Erasmus+) to 
-Vilnius University in Lithuania. I've applied and have been accepted, so I've
-spent second semester of my Master studies in Vilnius university, following
-courses in English, meeting faculty members and engineers from local software
-companies. This experience opened my mind to the world, and, that is of huge
-value, made me confident about my language and communication skills. Actually, 
-it was this exchange programme, that made me feel like I'm able to undertake 
-such a challenge as an oversea PhD.
+For second semester of my Master studies, I've applied and have been accepted 
+for an academic exchange programme (Erasmus+) to Vilnius University, Lithuania. 
+I've spent  in Vilnius university, following courses in English, meeting 
+faculty members and engineers from local software companies. This experience 
+opened my mind to the world, and, that is of huge value, made me confident 
+about my language and communication skills. This exchange programme was a second
+factor, that made me feel like I'm able to undertake such a challenge as an 
+oversea PhD.
 
 After I've come back home, I've started to search for a suitable PhD-position.
-An ideal position I have been looking for, would include a research activities
+An ideal position I have been looking for, would include research activities
 and practical software development connected with application of typed 
 functional programming to some challenging engineering problems, that require
 high level of reliability. Besides, I was looking for a funded position, because
 otherwise I wouldn't be able to cover tuition fees and living expenses.
 
-As far as I'm highly interested in functional programming and also in software 
-development with Haskell, I try to be connected to community. It happened so, 
-that the most suitable way for me to follow for researchers updates are their 
-Twitter accounts and some mailing lists (such as TYPES). Fortunately, once, 
-one of the people who I've been following, Dr. Andrey Mokhov, 
-published a request, stating that he is looking for PhD-students to work with 
-him in Newcastle University. I wrote him an email, 
-supplying my CV, and we started a discussion. He proposed me to take part in 
-a project NSS1742 "Formal Methods for Design of Safety-Critical Processors". 
-That was exactly what I was looking for, because it incorporates both study of 
-formal methods and practice in development of large-scale systems. As far as
-my main research interest is functional programming languages and I have a solid
-software development background, Dr. Mokhov proposed to work on domain-specific
-languages for processor specification with formal semantics and hardware
-compilation/generation tools. Dr. Mokhov even  gave me a possibility to 
-contribute into work of his research group and write a section names 
-"DSLs for improved design productivity" of paper "Prototyping Resilient 
-Processing Cores in Workcraft" that has been accepted for 2nd International
-Workshop on Resiliency in Embedded Electronic Systems 2017 
-(\url{https://www.edacentrum.de/rees}). Considering all mentioned facts, our
-interactions seems highly productive to me and I would be glad to work under 
-his supervision. Moreover, Newcastle university has great scholarship 
-possibilities, therefore I hope to be able to have enough means to feel
-comfortable. 
+I've found Dr Mokhov's call for PhD students and got very excited about the 
+proposed topic. I wrote him an email, supplying my CV, and we started a 
+discussion. He proposed me to take part in project NSS1742 "Formal Methods for 
+Design of Safety-Critical Processors". That was exactly what I was looking for, 
+because it incorporates both study of formal methods and practice in development
+of large-scale systems. As far as my main research interest is functional
+programming languages and I have a solid software development background,
+Dr Mokhov proposed to work on domain-specific languages for processor
+specification with formal semantics and hardware compilation/generation tools.
+I immediately joined the on-going research work by Dr Mokhov and his research
+team on the topic, which led to our joint paper "Prototyping Resilient 
+Processing Cores in Workcraft" which was accepted at the 2nd International
+Workshop on Resiliency in Embedded Electronic Systems that is a part of DATE'17
+--- the top European conference on Design Automation that will take place in
+Lausanne, Switzerland, in March 2017. We are currently preparing an extended
+version of the paper, which will be published by IEEE, and my section
+on domain-specific languages plays the central role in the paper.
+
+Considering all mentioned facts, our interaction seems highly productive to me
+and I would be glad to work under Dr Mokhov's supervision.
 
 I feel fascinated by perspective of being part of productive academic team and
 taking part in research on processor architecture development tools 
 using cutting-edge programming techniques. In future, having such an experience, 
-academic connections and degree, that PhD studies in Newcastle University may 
+academic connections and degree, that PhD studies in Newcastle University 
 provide, it'll be possible for me to apply for research positions in industry or
 even pursue an academic job. It is yet to be decided.
 
