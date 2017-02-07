@@ -1,0 +1,159 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+% NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Georgy} % Your first name
+\familyname{Lukyanov} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{44 Pushkinskaya st.}{344082 Rostov-on-Don, Russia}
+\mobile{+7(908) 506 9512}
+\email{georgiylukjanov@gmail.com}
+\homepage{geo2a.github.io}{geo2a.github.io}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+\clearpage
+
+\recipient{HR Departmnet}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+\date{\today} % Letter date
+\opening{Dear Sir or Madam,} % Opening greeting
+\closing{Yours faithfully,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+\makelettertitle % Print letter title
+
+A distinctive feature of functional programming paradigm is that it takes
+roots in such highly abstract fields of mathematics as logic and theory of
+computations. Influenced with concision of lambda calculus and clarity of logic, 
+functional programming languages have laconic syntax assigned to powerful
+and rich semantics. And more than that, the most notable distinction of modern 
+functional programming languages are its type systems, providing feature of
+so-called lightweight verification and enabling software developers with
+possibility to eliminate a lot of errors without even running their programs.
+
+Those facts about functional programming have fascinated me when I was in third
+year of my undergraduate studies and I've started to look for a way to improve 
+my understanding of mathematics that makes a basis for it and to have a
+supervised research work on some topic, connected with functional programming. 
+And, fortunately, there faculty members in my department who shared my interests
+and helped me to develop myself and my knowledge. Finally, after two years, 
+it led to creation of my Bachelor's thesis, that discussed different approaches
+to typing of computations containing side-effects to development of parsers.
+Recently, I've revised this work, translated into English and submitted to 
+TMPA 2017 conference (\url{http://tmpaconf.org/}) and it was accepted. I'll be
+presenting it on 3d or 4th of March, 2017 in Moscow, proceedings are going to
+be published with Springer in their Communications in Computer and Information 
+Science series (indexed by Scopus and DBLP digital libraries). 
+
+After receiving my Bachelor's diploma, I've enrolled to Master's
+program, provided by the same university and continued to work with my
+supervisor. During next year, I've been developing a distributed system, 
+that helps teacher of programming classes to distribute his attention between
+students (Project description is available on github: \url{https://github.com/geo2a/students-big-brother}). 
+
+Alongside with development of this project and following my own classes, 
+I've been assisting to teach "Functional Programming in Haskell" course taught 
+by prof. Vitaly Bragilevskiy to undergrads by occasional lecturing
+and teaching practical classes. It wasn't my first experience of teaching,
+because I've already been given some lessons on mathematics and programming 
+individually to freshmen and school pupils, but it first one of such a large 
+scale. As I think, it was really important for me to have a look on educational 
+procedures from teachers point of view.
+
+Then, I was advised to go for an academic exchange programme (Erasmus+) to 
+Vilnius University in Lithuania. I've applied and have been accepted, so I've
+spent second semester of my Master studies in Vilnius university, following
+courses in English, meeting faculty members and engineers from local software
+companies. This experience opened my mind to the world, and, that is of huge
+value, made me confident about my language and communication skills. Actually, 
+it was this exchange programme, that made me feel like I'm able to undertake 
+such a challenge as an oversea PhD.
+
+After I've come back home, I've started to search for a suitable PhD-position.
+An ideal position I have been looking for, would include a research activities
+and practical software development connected with application of typed 
+functional programming to some challenging engineering problems, that require
+high level of reliability. Besides, I was looking for a funded position, because
+otherwise I wouldn't be able to cover tuition fees and living expenses.
+
+As far as I'm highly interested in functional programming and also in software 
+development with Haskell, I try to be connected to community. It happened so, 
+that the most suitable way for me to follow for researchers updates are their 
+Twitter accounts and some mailing lists (such as TYPES). Fortunately, once, 
+one of the people who I've been following, Dr. Andrey Mokhov, 
+published a request, stating that he is looking for PhD-students to work with 
+him in Newcastle University. I wrote him an email, 
+supplying my CV, and we started a discussion. He proposed me to take part in 
+a project NSS1742 "Formal Methods for Design of Safety-Critical Processors". 
+That was exactly what I was looking for, because it incorporates both study of 
+formal methods and practice in development of large-scale systems. As far as
+my main research interest is functional programming languages and I have a solid
+software development background, Dr. Mokhov proposed to work on domain-specific
+languages for processor specification with formal semantics and hardware
+compilation/generation tools. Dr. Mokhov even  gave me a possibility to 
+contribute into work of his research group and write a section names 
+"DSLs for improved design productivity" of paper "Prototyping Resilient 
+Processing Cores in Workcraft" that has been accepted for 2nd International
+Workshop on Resiliency in Embedded Electronic Systems 2017 
+(\url{https://www.edacentrum.de/rees}). Considering all mentioned facts, our
+interactions seems highly productive to me and I would be glad to work under 
+his supervision. Moreover, Newcastle university has great scholarship 
+possibilities, therefore I hope to be able to have enough means to feel
+comfortable. 
+
+I feel fascinated by perspective of being part of productive academic team and
+taking part in research on processor architecture development tools 
+using cutting-edge programming techniques. In future, having such an experience, 
+academic connections and degree, that PhD studies in Newcastle University may 
+provide, it'll be possible for me to apply for research positions in industry or
+even pursue an academic job. It is yet to be decided.
+
+\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
